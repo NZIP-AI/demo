@@ -7,29 +7,11 @@
     <style>
         body { margin: 0; padding: 0; overflow: hidden; }
         #nzip-frame { width: 100vw; height: 100vh; border: none; }
-        
-        /* Переміщення Flow XO кнопки вище */
-        .fxo-widget-launcher {
-            bottom: 120px !important; /* замість стандартних 20px */
-        }
     </style>
 </head>
 <body>
     <iframe id="nzip-frame" src="https://www.nzip.cz"></iframe>
     
     <script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiMzZjVhYTYiLCJ3ZWIiOnsiYm90SWQiOiI2ODZhODk1Y2I4ODA3YzAwNWMzOTAxZmQiLCJ0aGVtZSI6IiMzZjVhYTYiLCJsYWJlbCI6Ik5aSVAgQUkifSwid2VsY29tZVRleHQiOiLwn5KhIE5aSVAgQUkiLCJwb3B1cEhlaWdodCI6Ijc1JSJ9" async defer></script>
-    
-    <script>
-        // Автоматичне відкриття чату через 2 секунди після завантаження
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                // Шукаємо кнопку Flow XO і клікаємо на неї
-                const flowxoButton = document.querySelector('.fxo-widget-launcher');
-                if (flowxoButton) {
-                    flowxoButton.click();
-                }
-            }, 2000); // 2 секунди затримки
-        });
-    </script>
 </body>
 </html>
